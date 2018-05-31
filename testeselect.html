@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+<linguagem de script = JavaScript> 
+
+        função popup (mylink, windowname, urlparams) 
+       { 
+            if (! Window.focus) retorna verdadeiro; 
+            window.open (mylink.href + ur lparams, nome do 
+                                   vento, 'largura = 400, altura = 200, scro llbars = sim ,s '); 
+            retorna falso; 
+      } 
+
+        função openSelection () 
+        { 
+              var id; 
+                com (document.companyList.sele CT1) 
+                    para (var loopIndex = 0; loopIndex <comprimento; loopIndex ++) 
+                        se (opções [loopIndex] .Seleccionar ed) 
+                        { 
+                             id = opções [loopIndex] .value; 
+                             Retornar popup (isso, 'CompanyEdit', '? ID =' + id);
+                        } 
+        } 
+
+</ script> 
+</ head> 
+<body> 
+      <ação do formulário = companyEdit.php name = companyList> 
+      <nome da seleção = select1 onDblClick = openSelection () size = 5> 
+                     <valor da opção = 1> Ford </ option> 
+                     < valor da opção = 2> Chevy </ option> 
+                     <valor da opção = 3> Honda </ option> 
+                     <valor da opção = 4> Mercedes </ option>
+                </ select> </ form>
+</ body> 
+</ html> 
+
