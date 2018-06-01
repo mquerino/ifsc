@@ -2,9 +2,11 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <link rel="stylesheet" type="text/css" href="estilo/estilo3">
+        <title>Tubarão</title>
     </head>
     <body>
+        <img src="imagem/CategralTb.jpg" alt="Categral Tubarão" width="800px" height="200px">
         <?php
         echo 'Ola TUBARÃO';
         ?><P>
